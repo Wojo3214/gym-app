@@ -11,10 +11,10 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { barbell, square, home } from 'ionicons/icons';
+import { barbell, person, home } from 'ionicons/icons';
 import HomePage from './pages/HomePage';
 import TrainingPage from './pages/TrainingPage';
-import Tab3 from './pages/Tab3';
+import ProfilePage from './pages/ProfilePage';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -48,8 +48,8 @@ const App: React.FC = () => (
           <Route exact path="/trainingPage">
             <TrainingPage />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/profilePage">
+            <ProfilePage />
           </Route>
           <Route exact path="/">
             <Redirect to="/homePage" />
@@ -64,9 +64,9 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={barbell} />
             <IonLabel>Training list</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+          <IonTabButton tab="ProfilePage" href="/profilePage">
+            <IonIcon aria-hidden="true" icon={person} />
+            <IonLabel>Profile</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
