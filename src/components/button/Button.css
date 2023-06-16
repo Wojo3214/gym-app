@@ -1,0 +1,30 @@
+ion-item-sliding.item-sliding{
+  margin-bottom: 16px;
+}
+
+ion-item-sliding.item-sliding:last-child{
+  margin-bottom: 0;
+}
+
+ion-item.exercise-item {
+  --background: var(--ion-color-light);
+  --border-radius: 12px;
+}
+
+ion-item.exercise-item h2{
+  font-weight: 600;
+}
+
+.item-option {
+  border-radius: 12px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.item-option:first-child {
+  margin-left: 8px;
+}
+
+.item-option:last-child {
+  margin-right: 0;
+}
